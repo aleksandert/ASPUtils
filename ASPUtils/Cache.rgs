@@ -1,0 +1,27 @@
+HKCR
+{
+	ASPUtils.Cache.1 = s 'Cache Class'
+	{
+		CLSID = s '{EF6AFC90-1C08-4AC1-B519-25F748EB2DD2}'
+	}
+	ASPUtils.Cache = s 'Cache Class'
+	{		
+		CurVer = s 'ASPUtils.Cache.1'
+	}
+
+	NoRemove CLSID
+	{
+		ForceRemove {EF6AFC90-1C08-4AC1-B519-25F748EB2DD2} = s 'Cache Class'
+		{
+			ProgID = s 'ASPUtils.Cache.1'
+			VersionIndependentProgID = s 'ASPUtils.Cache'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{A4DB2F3F-4D92-4753-9255-4A4515BBE890}'
+			Version = s '1.0'
+		}
+	}
+}

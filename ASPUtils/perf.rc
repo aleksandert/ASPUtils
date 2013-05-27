@@ -1,0 +1,15 @@
+STRINGTABLE
+BEGIN
+    0 "ASP Utils Cache Counters"
+    1 "ASP Utils Cache Counters" // {Locked} means don't localize
+    2 "Description"
+    4 "Cache Entries"
+    5 "Cache Entries" // {Locked} means don't localize
+    6 "Total number of entries within the cache added by the user."
+    8 "Cache Hits sec"
+    9 "Cache Hits sec" // {Locked} means don't localize
+    10 "The total number of requests served from the cache."
+    12 "Cache Misses sec"
+    13 "Cache Misses sec" // {Locked} means don't localize
+    14 "The total number of requests to the cache that failed."
+END

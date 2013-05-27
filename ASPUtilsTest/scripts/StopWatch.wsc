@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<component>
+
+  <registration
+    description="ASPUtils WSC StopWatch"
+    progid="ASPUtilsWSC.StopWatch"
+    version="1.00"
+    classid="{9dda299f-f18b-4529-a578-3ff6cdbc4342}"
+>
+  </registration>
+
+  <public>
+    <method name="Split">
+      <PARAMETER name="Description"/>
+    </method>
+    <method name="Render">
+    </method>
+  </public>
+
+  <implements type="ASP" id="ASP" />
+
+  <script language="VBScript">
+    <![CDATA[
+
+    Private m_Start
+    Private m_Last
+
+    private split_index
+
+    Public Splits(10)
+
+    Public Sub Split(byVal description)
+            
+        Dim tmr : tmr = Timer
+
+        If m_Start = 0 Then 
+                
+            m_Start = tmr
+            m_Last = tmr
+
+        End If
+
+        set oSplit = new Stopwatch_Split
+
+        oSplit.Index = split_index
+        oSplit.Description = description
+        oSplit.Time = tmr
+        oSplit.FromStart = tmr - m_start
+        oSplit.FromLast = tmr - m_last
+
+        set Splits(split_index) = oSplit
+
+        m_last = tmr
+        split_index = split_index + 1
+
+    End Sub
+
+    Public Sub Render()
+
+        Response.Write("<table id=""stopwatch"">")
+        Response.Write("<tr>")
+        Response.Write("<td>#</td>")
+        Response.Write("<td>Event</td>")
+        Response.Write("<td>Time</td>")
+        Response.Write("<td>From Start</td>")
+        Response.Write("<td>From Last</td>")
+        Response.Write("</tr>")
+
+        For i = 0 to split_index - 1
+            
+            set oSplit = splits(i)
+
+            Response.Write("<tr>")
+            response.Write("<td>" & Splits(i).Index & "</td>")
+            response.Write("<td>" & Splits(i).Description & "</td>")
+            response.Write("<td>" & Splits(i).Time & "</td>")
+            response.Write("<td>" & FormatNumber(Splits(i).FromStart, 3) & "</td>")
+            response.Write("<td>" & FormatNumber(Splits(i).FromLast, 3) & "</td>")
+            Response.Write("</tr>")
+
+        Next
+
+            
+        Response.Write("</table>")
+
+    End Sub
+    
+    Public Sub Class_Initialize()
+
+        m_Start = 0
+        m_Last = 0
+        split_index = 0
+
+    End Sub
+
+    Class Stopwatch_Split
+
+        Public Index
+        Public Description
+        Public Time
+        Public FromStart
+        Public FromLast
+    
+    End Class
+
+]]>
+  </script>
+
+</component>

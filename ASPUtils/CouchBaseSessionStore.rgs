@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPTest.CouchBaseSessionStore.1 = s 'CouchBaseSessionStore Class'
+	{
+		CLSID = s '{EF8FD5BD-10F5-4C1B-AFFC-DD6EA1E5A1A1}'
+	}
+	ASPTest.CouchBaseSessionStore = s 'CouchBaseSessionStore Class'
+	{		
+		CurVer = s 'ASPTest.CouchBaseSessionStore.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EF8FD5BD-10F5-4C1B-AFFC-DD6EA1E5A1A1} = s 'CouchBaseSessionStore Class'
+		{
+			ProgID = s 'ASPTest.CouchBaseSessionStore.1'
+			VersionIndependentProgID = s 'ASPTest.CouchBaseSessionStore'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

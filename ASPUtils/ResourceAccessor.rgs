@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.ResourceAccessor.1 = s 'ResourceAccessor Class'
+	{
+		CLSID = s '{16619025-5650-417A-9FE7-977A1C7C4C84}'
+	}
+	ASPUtils.ResourceAccessor = s 'ResourceAccessor Class'
+	{		
+		CurVer = s 'ASPUtils.ResourceAccessor.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {16619025-5650-417A-9FE7-977A1C7C4C84} = s 'ResourceAccessor Class'
+		{
+			ProgID = s 'ASPUtils.ResourceAccessor.1'
+			VersionIndependentProgID = s 'ASPUtils.ResourceAccessor'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{A4DB2F3F-4D92-4753-9255-4A4515BBE890}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,284 @@
+// ASPUtils.idl : IDL source for ASPUtils
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ASPUtils.tlb) and marshalling code.
+import "asptlb.idl";
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(8DDF5AE5-1782-4DF1-BDAC-CEF5733AA0BA),
+	dual,
+	nonextensible,	
+	pointer_default(unique)
+]
+interface ICache : IDispatch
+{
+		[id(DISPID_VALUE), propputref, helpstring("Sets the value for a given key.")] HRESULT Item([in] VARIANT key, [in] VARIANT value);
+		[id(DISPID_VALUE), propput, helpstring("Sets the value for a given key.")] HRESULT Item([in] VARIANT key, [in] VARIANT value);
+		[id(DISPID_VALUE), propget, helpstring("Gets the value for a given key.")] HRESULT Item([in] VARIANT key, [out, retval] VARIANT* value);
+		[id(1), helpstring("Sets the cache value for a given key.")] HRESULT Set([in] VARIANT key, [in] VARIANT value);
+		[id(2), helpstring("Sets the cache value for a given key with sliding expiration.")] HRESULT SetSliding([in] VARIANT key, [in] VARIANT value, [in] VARIANT slidingExpiration);
+		[id(3), helpstring("Sets the cache value for a given key with absolute expiration.")] HRESULT SetAbsolute([in] VARIANT key, [in] VARIANT value, [in] VARIANT absoluteExpiration);
+		[id(4), propget, helpstring("Get the number of value in the cache.")] HRESULT Count([out, retval] long* pCount);
+		[id(5), helpstring("Determine if a given key is in the cache.")] HRESULT Exists([in] VARIANT key, [out, retval] VARIANT_BOOL* pExists);
+		[id(6), helpstring("Get an array containing all keys in the cache.")] HRESULT Keys([out, retval] VARIANT* pKeysArray);
+		[id(7), helpstring("Remove a given key from the cache.")] HRESULT Remove([in] VARIANT key);
+		[id(8), helpstring("Remove all values from the cache.")] HRESULT RemoveAll();
+		[id(9), helpstring("Get the absolute expiration time for a given key.")] HRESULT Expires([in] VARIANT key, [out, retval] VARIANT* pExpires);
+		[id(10), helpstring("Get the size of item in the cache.")] HRESULT GetSize([in] VARIANT key, [out, retval] long* pSize);
+		[id(DISPID_NEWENUM)] HRESULT _NewEnum([out, retval] IUnknown** ppunk);
+};
+
+
+[
+	object,
+	uuid(D2D624A5-E745-4203-82B8-A9401B8B28C0),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHashMap : IDispatch
+{
+	[id(DISPID_VALUE), propputref, helpstring("Sets the value for a given key.")] HRESULT Item([in] VARIANT key, [in] VARIANT value);
+	[id(DISPID_VALUE), propput, helpstring("Sets the value for a given key.")] HRESULT Item([in] VARIANT key, [in] VARIANT value);
+	[id(DISPID_VALUE), propget, helpstring("Gets the value for a given key.")] HRESULT Item([in] VARIANT key, [out, retval] VARIANT* value);
+	[id(1), helpstring("Sets the value for a given key.")] HRESULT Set([in] VARIANT key, [in] VARIANT value);
+	[id(4), propget, helpstring("Get the number of items in the HashMap.")] HRESULT Count([out, retval] long* pCount);
+	[id(5), helpstring("Determine if a given key is in the HashMap.")] HRESULT Exists([in] VARIANT key, [out, retval] VARIANT_BOOL* pExists);
+	[id(6), helpstring("Get an array containing all keys in the HashMap.")] HRESULT Keys([out, retval] VARIANT* pKeysArray);
+	[id(7), helpstring("Remove a given key from the HashMap.")] HRESULT Remove([in] VARIANT key);
+	[id(8), helpstring("Remove all values from the HashMap.")] HRESULT RemoveAll();
+	[id(DISPID_NEWENUM)] HRESULT _NewEnum([out, retval] IUnknown** ppunk);
+};
+
+typedef enum {EXC_MODE_NONE, EXC_MODE_ACQUIRE, EXC_MODE_RELEASE} ExclusiveMode;
+
+[
+	object,
+	uuid(94503E88-964C-45A9-B492-631B31402CEB),
+	dual,
+	nonextensible,
+	pointer_default(unique),
+	local
+]
+interface IASPSessionStoreProvider : IDispatch{
+	[id(10)] HRESULT Initialize();
+	[id(11)] HRESULT Terminate();
+
+	[id(1)] HRESULT GetItem(
+		[in] BSTR bstrKey, 
+		[in] ExclusiveMode lExclusiveMode,
+		[in] IStream* pStream,
+		[out] void** lLockId, 
+		[out] long* lLockAge,
+		[out] VARIANT_BOOL* lLocked);
+	
+	[id(2)] HRESULT SetItem(
+		[in] BSTR bstrKey,
+		[in] long lTimeout,
+		[in] void* lLockId,
+		[in] IStream* pStream);
+	
+	[id(3)] HRESULT ReleaseItemExclusive(
+		[in] BSTR bstrKey, 
+		[in] void* lockId);
+	
+	[id(4)] HRESULT RemoveItem(
+		[in] BSTR bstrKey,
+		[in] void* lLockId);
+
+	[id(5)] HRESULT ResetItemTimeout(
+		[in] BSTR bstrKey);
+};
+[
+	object,
+	uuid(C3E704FD-0C00-45A1-A5A4-D264A8807E7D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICustomSession : IDispatch
+{
+	[id(DISPID_VALUE), propget] HRESULT Value([in] BSTR bstrValue,  [out, retval] VARIANT* pvar); 
+	[id(DISPID_VALUE), propput] HRESULT Value([in] BSTR bstrValue,  [in] VARIANT pvar); 
+	[id(DISPID_VALUE), propputref] HRESULT Value([in] BSTR bstrValue,  [in] VARIANT pvar);
+	[id(1)] HRESULT Init([in] ISessionObject* pSession);
+	[id(2), propget, helpstring("Returns a Session ID for this user.")] HRESULT SessionID([out, retval] BSTR* pbstrRet);
+	[id(3), propget] HRESULT Timeout([out, retval] long *plvar);
+	[id(3), propput] HRESULT Timeout([in] long lvar);
+	[id(4)] HRESULT Abandon();
+	[id(5), propget] HRESULT CodePage([out, retval] long *plvar);
+	[id(5), propput] HRESULT CodePage([in] long lvar);
+	[id(6), propget] HRESULT LCID([out, retval] long *plvar);
+	[id(6), propput] HRESULT LCID([in] long lvar);
+	[id(7), propget] HRESULT StaticObjects([out, retval] IVariantDictionary **ppTaggedObjects);
+	[id(8), propget] HRESULT Contents([out, retval] IVariantDictionary **ppProperties);
+};
+
+[
+	object,
+	uuid(0C52FDBD-A152-4075-B689-81E90F659236),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ISessionManager : IDispatch{
+	[id(1), propget] HRESULT Session(BOOL bReadOnly, [out, retval] ICustomSession** ppSessionObject);
+	[id(2)] HRESULT StartSession();
+	[id(3)] HRESULT EndSession();
+	[id(4), local] HRESULT OnEndPage([in] BSTR bstrSessionId, [in] void* lLockId);
+	[id(10)] HRESULT Initialize();
+	[id(11)] HRESULT Terminate();
+};
+
+[
+	object,
+	uuid(37EFC32D-2D2B-4DDB-BD40-19D2BFDF1EA5),
+	dual,
+	nonextensible,	
+	pointer_default(unique),
+	local
+]
+interface IPageHandler : IDispatch
+{
+	//Standard Server Side Component Methods
+	HRESULT OnStartPage([in] IUnknown* piUnk);
+	HRESULT OnEndPage();	
+
+	HRESULT RegisterNotifyOnEndPage([in] ISessionManager *pSessionManager, [in] BSTR bstrSessionId, [in] void* lLockId);
+};
+
+[
+	object,
+	uuid(1F805DC8-A96F-466E-9487-162695244485),
+	dual,
+	nonextensible,	
+	pointer_default(unique)
+]
+interface IInProcSessionStore : IASPSessionStoreProvider
+{
+
+};
+
+[
+	object,
+	uuid(56C5E856-1587-483B-A8A9-7C89DF3E73AD),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICouchBaseSessionStore : IASPSessionStoreProvider{
+};
+[
+	object,
+	uuid(7479B092-3C5D-4803-A876-FD6D73877897),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMemcachedSessionStore : IASPSessionStoreProvider{
+};
+
+
+
+
+[
+	object,
+	uuid(68DC0D9A-79B5-4536-A4B6-D518B57DAE14),
+	dual,
+	nonextensible,	
+	pointer_default(unique)
+]
+interface IASPSampleObject : IDispatch
+{
+	//Standard Server Side Component Methods
+	HRESULT OnStartPage([in] IUnknown* piUnk);
+	HRESULT OnEndPage();	
+};
+
+[
+	uuid(A4DB2F3F-4D92-4753-9255-4A4515BBE890),
+	version(1.0),
+]
+library ASPUtilsLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(EF6AFC90-1C08-4AC1-B519-25F748EB2DD2)		
+	]
+	coclass Cache
+	{
+		[default] interface ICache;
+	};
+	[
+		uuid(A6893607-D7BE-4472-ADB4-C6E3707292E1)		
+	]
+	coclass HashMap
+	{
+		[default] interface IHashMap;
+	};
+	[
+		uuid(5BC738E6-F0E2-42DE-B74C-80E0906AA7EC)		
+	]
+	coclass PageHandler
+	{
+		[default] interface IPageHandler;
+	};
+	[
+		uuid(7D59567B-54A4-4FFF-93D2-60BDBB48C046)		
+	]
+	coclass CustomSession
+	{
+		[default] interface ICustomSession;
+	};
+	[
+		uuid(757BCA77-5027-4FFA-981C-1B9820520ABB)		
+	]
+	coclass SessionManager
+	{
+		[default] interface ISessionManager;
+	};
+	[
+		uuid(E230EB51-4C85-48C2-ACA4-DC636F6F3231)		
+	]
+	coclass VariantDictionary
+	{
+		[default] interface IVariantDictionary;
+	};
+	[
+		uuid(25511CDC-CADC-4DEE-8561-7F2CD7AF9E94)		
+	]
+	coclass InProcSessionStore
+	{
+		[default] interface IInProcSessionStore;
+	};
+	
+	[
+		uuid(EF8FD5BD-10F5-4C1B-AFFC-DD6EA1E5A1A1)		
+	]
+	coclass CouchBaseSessionStore
+	{
+		[default] interface ICouchBaseSessionStore;
+	};
+	[
+		uuid(739EAD5F-7EF1-4FFB-B73E-9E6E30642F47)		
+	]
+	coclass MemcachedSessionStore
+	{
+		[default] interface IMemcachedSessionStore;
+	};
+	
+	[
+		uuid(2EB20D67-4B53-4709-AE62-A657EF5BB7CC)		
+	]
+	coclass ASPSampleObject
+	{
+		[default] interface IASPSampleObject;
+	};
+	
+};
+

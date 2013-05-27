@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.VariantDictionary.1 = s 'VariantDictionary Class'
+	{
+		CLSID = s '{E230EB51-4C85-48C2-ACA4-DC636F6F3231}'
+	}
+	ASPUtils.VariantDictionary = s 'VariantDictionary Class'
+	{		
+		CurVer = s 'ASPUtils.VariantDictionary.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E230EB51-4C85-48C2-ACA4-DC636F6F3231} = s 'VariantDictionary Class'
+		{
+			ProgID = s 'ASPUtils.VariantDictionary.1'
+			VersionIndependentProgID = s 'ASPUtils.VariantDictionary'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.SessionManager.1 = s 'SessionManager Class'
+	{
+		CLSID = s '{757BCA77-5027-4FFA-981C-1B9820520ABB}'
+	}
+	ASPUtils.SessionManager = s 'SessionManager Class'
+	{		
+		CurVer = s 'ASPUtils.SessionManager.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {757BCA77-5027-4FFA-981C-1B9820520ABB} = s 'SessionManager Class'
+		{
+			ProgID = s 'ASPUtils.SessionManager.1'
+			VersionIndependentProgID = s 'ASPUtils.SessionManager'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

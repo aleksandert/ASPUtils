@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.CustomSession.1 = s 'CustomSession Class'
+	{
+		CLSID = s '{7D59567B-54A4-4FFF-93D2-60BDBB48C046}'
+	}
+	ASPUtils.CustomSession = s 'CustomSession Class'
+	{		
+		CurVer = s 'ASPUtils.CustomSession.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7D59567B-54A4-4FFF-93D2-60BDBB48C046} = s 'CustomSession Class'
+		{
+			ProgID = s 'ASPUtils.CustomSession.1'
+			VersionIndependentProgID = s 'ASPUtils.CustomSession'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

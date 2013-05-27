@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.InProcSessionStore.1 = s 'InProcSessionStore Class'
+	{
+		CLSID = s '{25511CDC-CADC-4DEE-8561-7F2CD7AF9E94}'
+	}
+	ASPUtils.InProcSessionStore = s 'InProcSessionStore Class'
+	{		
+		CurVer = s 'ASPUtils.InProcSessionStore.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {25511CDC-CADC-4DEE-8561-7F2CD7AF9E94} = s 'InProcSessionStore Class'
+		{
+			ProgID = s 'ASPUtils.InProcSessionStore.1'
+			VersionIndependentProgID = s 'ASPUtils.InProcSessionStore'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

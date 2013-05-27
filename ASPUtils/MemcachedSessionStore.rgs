@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.MemcachedSessionStore.1 = s 'MemcachedSessionStore Class'
+	{
+		CLSID = s '{739EAD5F-7EF1-4FFB-B73E-9E6E30642F47}'
+	}
+	ASPUtils.MemcachedSessionStore = s 'MemcachedSessionStore Class'
+	{		
+		CurVer = s 'ASPUtils.MemcachedSessionStore.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {739EAD5F-7EF1-4FFB-B73E-9E6E30642F47} = s 'MemcachedSessionStore Class'
+		{
+			ProgID = s 'ASPUtils.MemcachedSessionStore.1'
+			VersionIndependentProgID = s 'ASPUtils.MemcachedSessionStore'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,26 @@
+HKCR
+{
+	ASPUtils.PageHandler.1 = s 'PageHandler Class'
+	{
+		CLSID = s '{5BC738E6-F0E2-42DE-B74C-80E0906AA7EC}'
+	}
+	ASPUtils.PageHandler = s 'PageHandler Class'
+	{		
+		CurVer = s 'ASPUtils.PageHandler.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5BC738E6-F0E2-42DE-B74C-80E0906AA7EC} = s 'PageHandler Class'
+		{
+			ProgID = s 'ASPUtils.PageHandler.1'
+			VersionIndependentProgID = s 'ASPUtils.PageHandler'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			TypeLib = s '{4981D401-B548-46F8-9901-0639DE9D2246}'
+			Version = s '1.0'
+		}
+	}
+}

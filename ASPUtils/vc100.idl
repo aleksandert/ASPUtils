@@ -1,0 +1,13 @@
+import "docobj.idl";
+
+#line 16 "c:\\users\\aleksander.tusek\\documents\\visual studio 2010\\projects\\asputils\\asputils\\debug\\kissit.resources.tlh"
+interface _ResourceHelper;
+
+[ version(1.0), uuid(22cd067f-60ee-3ea0-b738-23f92d964cb0) ]
+library MyLib2
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+}
+

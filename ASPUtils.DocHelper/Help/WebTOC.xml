@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="a9180c78-8e75-46c3-a515-04653f40d8a8" Title="ASPUtils Namespace" Url="html/62418a4c-f412-c5dc-ace6-7f04ee857c08.htm">
+    <HelpTOCNode Id="ee0e312f-e8b2-4ea3-9ac8-14a5cd83cce0" Title="Cache Class" Url="html/bb99b66c-488f-522c-507f-f0f68649bc29.htm">
+      <HelpTOCNode Title="Cache Members" Url="html/68910e29-5b9c-85dc-10c2-0206660ee8ee.htm" />
+      <HelpTOCNode Title="Cache Constructor " Url="html/b7280203-20cb-d520-5ab2-4119ec2790b4.htm" />
+      <HelpTOCNode Title="Cache Methods" Url="html/e451c2f7-e67e-406d-2ede-5c70724cecea.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

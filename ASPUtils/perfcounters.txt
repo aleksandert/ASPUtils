@@ -1,0 +1,519 @@
+Performance Counter ID Queries [PERFLIB]:
+    Base Index: 0x00000737 (1847)
+    Last Counter Text ID: 0x00008A7E (35454)
+    Last Help Text ID: 0x00008A7F (35455)
+
+[.NET CLR Data] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x000013A4 (5028)
+    Last Counter ID: 0x000013B0 (5040)
+    First Help ID: 0x000013A5 (5029)
+    Last Help ID: 0x000013B1 (5041)
+
+[.NET CLR Networking] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x0000137A (4986)
+    Last Counter ID: 0x00001384 (4996)
+    First Help ID: 0x0000137B (4987)
+    Last Help ID: 0x00001385 (4997)
+
+[.NET CLR Networking 4.0.0.0] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00005474 (21620)
+    Last Counter ID: 0x0000548E (21646)
+    First Help ID: 0x00005475 (21621)
+    Last Help ID: 0x0000548F (21647)
+
+[.NET Data Provider for Oracle] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x000058F8 (22776)
+    Last Counter ID: 0x00005914 (22804)
+    First Help ID: 0x000058F9 (22777)
+    Last Help ID: 0x00005915 (22805)
+
+[.NET Data Provider for SqlServer] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00001386 (4998)
+    Last Counter ID: 0x000013A2 (5026)
+    First Help ID: 0x00001387 (4999)
+    Last Help ID: 0x000013A3 (5027)
+
+[.NET Memory Cache 4.0] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00005490 (21648)
+    Last Counter ID: 0x0000549E (21662)
+    First Help ID: 0x00005491 (21649)
+    Last Help ID: 0x0000549F (21663)
+
+[.NETFramework] Performance Counters (Enabled)
+    DLL Name: mscoree.dll
+    Open Procedure: OpenCtrs
+    Collect Procedure: CollectCtrs
+    Close Procedure: CloseCtrs
+    First Counter ID: 0x000013B2 (5042)
+    Last Counter ID: 0x00001460 (5216)
+    First Help ID: 0x000013B3 (5043)
+    Last Help ID: 0x00001461 (5217)
+
+[ASP] Performance Counters (Enabled)
+    DLL Name: aspperf.dll
+    Open Procedure: OpenASPPerformanceData
+    Collect Procedure: CollectASPPerformanceData
+    Close Procedure: CloseASPPerformanceData
+    First Counter ID: 0x00008A2A (35370)
+    Last Counter ID: 0x00008A7A (35450)
+    First Help ID: 0x00008A2B (35371)
+    Last Help ID: 0x00008A7B (35451)
+
+[ASP.NET] Performance Counters (Enabled)
+    DLL Name: aspnet_counters.dll
+    Open Procedure: OpenGenericCounters
+    Collect Procedure: CollectGenericCounters
+    Close Procedure: CloseGenericCounters
+    First Counter ID: 0x00008888 (34952)
+    Last Counter ID: 0x0000895A (35162)
+    First Help ID: 0x00008889 (34953)
+    Last Help ID: 0x0000895B (35163)
+
+[ASP.NET_2.0.50727] Performance Counters (Disabled)
+    DLL Name: C:\Windows\Microsoft.NET\Framework\v2.0.50727\aspnet_perf.dll
+    Open Procedure: OpenVersionedPerfData
+    Collect Procedure: CollectVersionedPerfData
+    Close Procedure: CloseVersionedPerfData
+    First Counter ID: 0x00004DC8 (19912)
+    Last Counter ID: 0x00004E94 (20116)
+    First Help ID: 0x00004DC9 (19913)
+    Last Help ID: 0x00004E95 (20117)
+
+[ASP.NET_4.0.30319] Performance Counters (Enabled)
+    DLL Name: aspnet_counters.dll
+    Open Procedure: OpenVersion4Counters
+    Collect Procedure: CollectVersion4Counters
+    Close Procedure: CloseVersion4Counters
+    First Counter ID: 0x00005D68 (23912)
+    Last Counter ID: 0x00005E3A (24122)
+    First Help ID: 0x00005D69 (23913)
+    Last Help ID: 0x00005E3B (24123)
+
+[ASP.NET_64_2.0.50727] Performance Counters (Disabled)
+    DLL Name: C:\Windows\Microsoft.NET\Framework64\v2.0.50727\aspnet_perf.dll
+    Open Procedure: OpenVersionedPerfData
+    Collect Procedure: CollectVersionedPerfData
+    Close Procedure: CloseVersionedPerfData
+    First Counter ID: 0x00004F64 (20324)
+    Last Counter ID: 0x00005030 (20528)
+    First Help ID: 0x00004F65 (20325)
+    Last Help ID: 0x00005031 (20529)
+
+[aspnet_state] Performance Counters (Enabled)
+    DLL Name: aspnet_counters.dll
+    Open Procedure: OpenStateCounters
+    Collect Procedure: CollectStateCounters
+    Close Procedure: CloseStateCounters
+    First Counter ID: 0x000087AC (34732)
+    Last Counter ID: 0x00008886 (34950)
+    First Help ID: 0x000087AD (34733)
+    Last Help ID: 0x00008887 (34951)
+
+[BITS] Performance Counters (Enabled)
+    DLL Name: bitsperf.dll
+    Open Procedure: PerfMon_Open
+    Collect Procedure: PerfMon_Collect
+    Close Procedure: PerfMon_Close
+    First Counter ID: 0x0000086C (2156)
+    Last Counter ID: 0x0000087C (2172)
+    First Help ID: 0x0000086D (2157)
+    Last Help ID: 0x0000087D (2173)
+
+[CcmFramework] Performance Counters (Enabled)
+    DLL Name: FrameworkPerf.dll
+    Open Procedure: CcmFramework_OpenPerformanceData
+    Collect Procedure: CcmFramework_CollectPerformanceData
+    Close Procedure: CcmFramework_ClosePerformanceData
+    First Counter ID: 0x0000319E (12702)
+    Last Counter ID: 0x000031B4 (12724)
+    First Help ID: 0x0000319F (12703)
+    Last Help ID: 0x000031B5 (12725)
+
+[ESENT] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\esentprf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00000C86 (3206)
+    Last Counter ID: 0x000010CE (4302)
+    First Help ID: 0x00000C87 (3207)
+    Last Help ID: 0x000010CF (4303)
+
+[F-Secure Gatekeeper Handler Starter] Performance Counters (Disabled)
+    DLL Name: C:\Program Files (x86)\F-Secure\Anti-Virus\avperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x000020CE (8398)
+    Last Counter ID: 0x0000210E (8462)
+    First Help ID: 0x000020CF (8399)
+    Last Help ID: 0x0000210F (8463)
+
+[FSDFWD] Performance Counters (Disabled)
+    DLL Name: C:\Program Files (x86)\F-Secure\FWES\Program\fsfwperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00002110 (8464)
+    Last Counter ID: 0x0000211A (8474)
+    First Help ID: 0x00002111 (8465)
+    Last Help ID: 0x0000211B (8475)
+
+[FSFW] Performance Counters (Disabled)
+    DLL Name: C:\Program Files (x86)\F-Secure\FWES\Program\fsesperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x0000211C (8476)
+    Last Counter ID: 0x00002136 (8502)
+    First Help ID: 0x0000211D (8477)
+    Last Help ID: 0x00002137 (8503)
+
+[HealthService] Performance Counters (Disabled)
+    DLL Name: C:\Program Files (x86)\System Center Operations Manager 2007\HealthServicePerformance.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00007BF6 (31734)
+    Last Counter ID: 0x00007C56 (31830)
+    First Help ID: 0x00007BF7 (31735)
+    Last Help ID: 0x00007C57 (31831)
+
+[InetInfo] Performance Counters (Enabled)
+    DLL Name: infoctrs.dll
+    Open Procedure: OpenINFOPerformanceData
+    Collect Procedure: CollectINFOPerformanceData
+    Close Procedure: CloseINFOPerformanceData
+    First Counter ID: 0x00007054 (28756)
+    Last Counter ID: 0x00007094 (28820)
+    First Help ID: 0x00007055 (28757)
+    Last Help ID: 0x00007095 (28821)
+
+[Lsa] Performance Counters (Enabled)
+    DLL Name: Secur32.dll
+    Open Procedure: OpenLsaPerformanceData
+    Collect Procedure: CollectLsaPerformanceData
+    Close Procedure: CloseLsaPerformanceData
+
+[MOMConnector] Performance Counters (Disabled)
+    DLL Name: C:\Program Files (x86)\System Center Operations Manager 2007\MOMConnectorPerformance.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00007C58 (31832)
+    Last Counter ID: 0x00007C78 (31864)
+    First Help ID: 0x00007C59 (31833)
+    Last Help ID: 0x00007C79 (31865)
+
+[MSDTC] Performance Counters (Enabled)
+    DLL Name: msdtcuiu.DLL
+    Open Procedure: DtcPerfOpen
+    Collect Procedure: DtcPerfCollect
+    Close Procedure: DtcPerfClose
+    First Counter ID: 0x000010D0 (4304)
+    Last Counter ID: 0x000010EA (4330)
+    First Help ID: 0x000010D1 (4305)
+    Last Help ID: 0x000010EB (4331)
+
+[MSDTC Bridge 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00005942 (22850)
+    Last Counter ID: 0x00005958 (22872)
+    First Help ID: 0x00005943 (22851)
+    Last Help ID: 0x00005959 (22873)
+
+[MSDTC Bridge 4.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00008768 (34664)
+    Last Counter ID: 0x0000877E (34686)
+    First Help ID: 0x00008769 (34665)
+    Last Help ID: 0x0000877F (34687)
+
+[MSSCNTRS] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\msscntrs.dll
+    Open Procedure: Open
+    Collect Procedure: Collect
+    Close Procedure: Close
+
+[MSSQL$SQLEXPRESS] Performance Counters (Enabled)
+    DLL Name: perf-MSSQL$SQLEXPRESS-sqlctr10.1.2531.0.dll
+    Open Procedure: OpenSQLPerformanceData
+    Collect Procedure: CollectSQLPerformanceData
+    Close Procedure: CloseSQLPerformanceData
+    First Counter ID: 0x00002138 (8504)
+    Last Counter ID: 0x00002470 (9328)
+    First Help ID: 0x00002139 (8505)
+    Last Help ID: 0x00002471 (9329)
+
+[MSSQLSERVER] Performance Counters (Enabled)
+    DLL Name: perf-MSSQLSERVER-sqlctr10.50.1600.1.dll
+    Open Procedure: OpenSQLPerformanceData
+    Collect Procedure: CollectSQLPerformanceData
+    Close Procedure: CloseSQLPerformanceData
+    First Counter ID: 0x00007C7A (31866)
+    Last Counter ID: 0x00007FB2 (32690)
+    First Help ID: 0x00007C7B (31867)
+    Last Help ID: 0x00007FB3 (32691)
+
+[Outlook] Performance Counters (Disabled)
+    DLL Name: C:\PROGRA~2\MICROS~1\Office14\OLMAPI32.DLL
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+
+[PerfDisk] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\System32\perfdisk.dll
+    Open Procedure: OpenDiskObject
+    Collect Procedure: CollectDiskObjectData
+    Close Procedure: CloseDiskObject
+
+[PerfNet] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\System32\perfnet.dll
+    Open Procedure: OpenNetSvcsObject
+    Collect Procedure: CollectNetSvcsObjectData
+    Close Procedure: CloseNetSvcsObject
+
+[PerfOS] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\System32\perfos.dll
+    Open Procedure: OpenOSObject
+    Collect Procedure: CollectOSObjectData
+    Close Procedure: CloseOSObject
+
+[PerfProc] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\System32\perfproc.dll
+    Open Procedure: OpenSysProcessObject
+    Collect Procedure: CollectSysProcessObjectData
+    Close Procedure: CloseSysProcessObject
+
+[rdyboost] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\sysmain.dll
+    Open Procedure: OpenReadyBoostPerfData
+    Collect Procedure: CollectReadyBoostPerfData
+    Close Procedure: CloseReadyBoostPerfData
+    First Counter ID: 0x0000161C (5660)
+    Last Counter ID: 0x00001630 (5680)
+    First Help ID: 0x0000161D (5661)
+    Last Help ID: 0x00001631 (5681)
+
+[RemoteAccess] Performance Counters (Enabled)
+    DLL Name: rasctrs.dll
+    Open Procedure: OpenRasPerformanceData
+    Collect Procedure: CollectRasPerformanceData
+    Close Procedure: CloseRasPerformanceData
+    First Counter ID: 0x0000089E (2206)
+    Last Counter ID: 0x000008C4 (2244)
+    First Help ID: 0x0000089F (2207)
+    Last Help ID: 0x000008C5 (2245)
+
+[ServiceModelEndpoint 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x000059DC (23004)
+    Last Counter ID: 0x00005A02 (23042)
+    First Help ID: 0x000059DD (23005)
+    Last Help ID: 0x00005A03 (23043)
+
+[ServiceModelOperation 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x000059BC (22972)
+    Last Counter ID: 0x000059DA (23002)
+    First Help ID: 0x000059BD (22973)
+    Last Help ID: 0x000059DB (23003)
+
+[ServiceModelService 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00005978 (22904)
+    Last Counter ID: 0x000059BA (22970)
+    First Help ID: 0x00005979 (22905)
+    Last Help ID: 0x000059BB (22971)
+
+[SMSvcHost 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x0000595A (22874)
+    Last Counter ID: 0x00005976 (22902)
+    First Help ID: 0x0000595B (22875)
+    Last Help ID: 0x00005977 (22903)
+
+[SMSvcHost 4.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x0000874A (34634)
+    Last Counter ID: 0x00008766 (34662)
+    First Help ID: 0x0000874B (34635)
+    Last Help ID: 0x00008767 (34663)
+
+[Spooler] Performance Counters (Enabled)
+    DLL Name: winspool.drv
+    Open Procedure: PerfOpen
+    Collect Procedure: PerfCollect
+    Close Procedure: PerfClose
+
+[SQLAgent$SQLEXPRESS] Performance Counters (Enabled)
+    DLL Name: perf-SQLAgent$SQLEXPRESS-sqlagtctr10.1.2531.0.dll
+    Open Procedure: OpenSQLPerformanceData
+    Collect Procedure: CollectSQLPerformanceData
+    Close Procedure: CloseSQLPerformanceData
+    First Counter ID: 0x00002472 (9330)
+    Last Counter ID: 0x00002492 (9362)
+    First Help ID: 0x00002473 (9331)
+    Last Help ID: 0x00002493 (9363)
+
+[SQLSERVERAGENT] Performance Counters (Enabled)
+    DLL Name: perf-MSSQL10_50.MSSQLSERVER-sqlagtctr.dll
+    Open Procedure: OpenSQLPerformanceData
+    Collect Procedure: CollectSQLPerformanceData
+    Close Procedure: CloseSQLPerformanceData
+    First Counter ID: 0x00007FB4 (32692)
+    Last Counter ID: 0x00007FD4 (32724)
+    First Help ID: 0x00007FB5 (32693)
+    Last Help ID: 0x00007FD5 (32725)
+
+[TapiSrv] Performance Counters (Enabled)
+    DLL Name: tapiperf.dll
+    Open Procedure: OpenTapiPerformanceData
+    Collect Procedure: CollectTapiPerformanceData
+    Close Procedure: CloseTapiPerformanceData
+    First Counter ID: 0x0000088A (2186)
+    Last Counter ID: 0x0000089C (2204)
+    First Help ID: 0x0000088B (2187)
+    Last Help ID: 0x0000089D (2205)
+
+[Tcpip] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\System32\Perfctrs.dll
+    Open Procedure: OpenTcpIpPerformanceData
+    Collect Procedure: CollectTcpIpPerformanceData
+    Close Procedure: CloseTcpIpPerformanceData
+
+[TermService] Performance Counters (Enabled)
+    DLL Name: perfts.dll
+    Open Procedure: OpenTSObject
+    Collect Procedure: CollectTSObjectData
+    Close Procedure: CloseTSObject
+    First Counter ID: 0x000010EC (4332)
+    Last Counter ID: 0x00001164 (4452)
+    First Help ID: 0x000010ED (4333)
+    Last Help ID: 0x00001165 (4453)
+
+[UGatherer] Performance Counters (Disabled)
+    DLL Name: %systemroot%\system32\msscntrs.dll
+    Open Procedure: Open
+    Collect Procedure: Collect
+    Close Procedure: Close
+    First Counter ID: 0x000014EA (5354)
+    Last Counter ID: 0x00001552 (5458)
+    First Help ID: 0x000014EB (5355)
+    Last Help ID: 0x00001553 (5459)
+
+[UGTHRSVC] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\msscntrs.dll
+    Open Procedure: Open
+    Collect Procedure: Collect
+    Close Procedure: Close
+    First Counter ID: 0x00001554 (5460)
+    Last Counter ID: 0x0000159A (5530)
+    First Help ID: 0x00001555 (5461)
+    Last Help ID: 0x0000159B (5531)
+
+[usbhub] Performance Counters (Enabled)
+    DLL Name: %SystemRoot%\system32\usbperf.dll
+    Open Procedure: OpenUsbPerformanceData
+    Collect Procedure: CollectUsbPerformanceData
+    Close Procedure: CloseUsbPerformanceData
+    First Counter ID: 0x00001356 (4950)
+    Last Counter ID: 0x00001378 (4984)
+    First Help ID: 0x00001357 (4951)
+    Last Help ID: 0x00001379 (4985)
+
+[W3SVC] Performance Counters (Enabled)
+    DLL Name: %windir%\system32\inetsrv\w3ctrs.dll
+    Open Procedure: OpenW3PerformanceData
+    Collect Procedure: CollectW3PerformanceData
+    Close Procedure: CloseW3PerformanceData
+    First Counter ID: 0x00006EA0 (28320)
+    Last Counter ID: 0x00006FA6 (28582)
+    First Help ID: 0x00006EA1 (28321)
+    Last Help ID: 0x00006FA7 (28583)
+
+[Windows Workflow Foundation 3.0.0.0] Performance Counters (Enabled)
+    DLL Name: netfxperf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00005916 (22806)
+    Last Counter ID: 0x00005940 (22848)
+    First Help ID: 0x00005917 (22807)
+    Last Help ID: 0x00005941 (22849)
+
+[Windows Workflow Foundation 4.0.0.0] Performance Counters (Enabled)
+    DLL Name: NETFXPerf.dll
+    Open Procedure: OpenPerformanceData
+    Collect Procedure: CollectPerformanceData
+    Close Procedure: ClosePerformanceData
+    First Counter ID: 0x00008780 (34688)
+    Last Counter ID: 0x000087AA (34730)
+    First Help ID: 0x00008781 (34689)
+    Last Help ID: 0x000087AB (34731)
+
+[WmiApRpl] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\wbem\wmiaprpl.dll
+    Open Procedure: WmiOpenPerfData
+    Collect Procedure: WmiCollectPerfData
+    Close Procedure: WmiClosePerfData
+    First Counter ID: 0x0000895C (35164)
+    Last Counter ID: 0x00008A28 (35368)
+    First Help ID: 0x0000895D (35165)
+    Last Help ID: 0x00008A29 (35369)
+
+[WSearchIdxPi] Performance Counters (Enabled)
+    DLL Name: %systemroot%\system32\tquery.dll
+    Open Procedure: PerfmonIDXOpen
+    Collect Procedure: PerfmonIDXCollect
+    Close Procedure: PerfmonIDXClose
+    First Counter ID: 0x0000159C (5532)
+    Last Counter ID: 0x0000161A (5658)
+    First Help ID: 0x0000159D (5533)
+    Last Help ID: 0x0000161B (5659)
+

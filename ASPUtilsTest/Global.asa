@@ -1,0 +1,29 @@
+﻿<script runat="server" language="vbscript">
+
+    Sub Application_OnStart() 
+        'Response.Write("Application_OnStart")
+    
+        SessionManager.Initialize()
+    End Sub
+    
+    Sub Application_OnEnd()
+        'Response.Write("Application_OnEnd")
+        SessionManager.Terminate()
+    End Sub
+        
+    Sub Session_OnStart()
+    
+        Response.Write("Session_OnStart")
+        SessionManager.StartSession()
+    End Sub
+
+    Sub Session_OnEnd()
+        Response.Write("Session_OnEnd")
+        SessionManager.EndSession()
+    End Sub
+       
+</script>
+
+<object runat="server" scope="application" id="Cache" progid="ASPUtils.Cache"></object>
+<object runat="server" scope="application" id="SessionManager" progid="ASPUtils.SessionManager"></object>
+
